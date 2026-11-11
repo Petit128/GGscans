@@ -1,0 +1,22 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Scan Downloader Global v3",
+  "version": "3.0.0",
+  "description": "Detection avancee des scans (lazy load, css, data-src).",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Detecter les scans"
+  }
+}
